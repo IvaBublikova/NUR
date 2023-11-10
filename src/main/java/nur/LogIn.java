@@ -23,24 +23,9 @@ public class LogIn extends VBox {
     private Label infoLabel = new Label("Login successful!");
     Image logo = new Image(getClass().getResourceAsStream("/nur/images/logo.png"));
 
-    public void logIn() {
+    public LogIn() {
 
-        loginButton.setOnAction(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-                // Perform login actions (for demonstration, assuming login is always successful)
-                // Show the warning message
-                infoLabel.setVisible(true);
-
-                // After a delay, hide the warning message
-                PauseTransition delay = new PauseTransition(Duration.seconds(2)); // Delay for 2 seconds
-                delay.setOnFinished(e -> infoLabel.setVisible(false));
-                delay.play();
-            }
-        });
-
-
-         ImageView imageView = new ImageView(logo);
+        ImageView imageView = new ImageView(logo);
         imageView.setFitWidth(150); // Set the width of the ImageView
         imageView.setFitHeight(150);
         HBox hbox = new HBox(imageView);

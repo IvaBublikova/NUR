@@ -21,10 +21,10 @@ public class Application extends javafx.application.Application {
 
     // Metoda pro zobrazení přihlašovací obrazovky
     public void showLoginScreen() {
-        //Scene scene = new Scene(loginScreen,900, 800);
+        Scene scene = new Scene(loginScreen,900, 800);
         //Scene scene = new Scene(homePage,900, 800);
         //Scene scene = new Scene(settings,900, 800);
-        Scene scene = new Scene(templates,900, 800);
+        //Scene scene = new Scene(templates,900, 800);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Naše skvělá aplikace");
         primaryStage.show();
