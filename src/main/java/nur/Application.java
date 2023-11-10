@@ -1,8 +1,8 @@
-package nur.nur_2;
+package nur;
 
-import nur.nur_2.Displays.HomePage;
-import nur.nur_2.Displays.Settings;
-import nur.nur_2.Displays.Templates;
+import nur.Displays.HomePage;
+import nur.Displays.Settings;
+import nur.Displays.Templates;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 

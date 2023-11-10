@@ -1,4 +1,4 @@
-package nur.nur_2.Displays;
+package nur.Displays;
 
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
@@ -18,7 +18,7 @@ public class HomePage extends BorderPane {
     private VBox body = new VBox(); //abych  mohla dat oba hbox vedle vbox
 
     private Button settingButton = new Button(); //odkaz na stránku Settings
-    private Image setting = new Image(getClass().getResourceAsStream("/nur/nur_2/images/setting.png"));
+    private Image setting = new Image(getClass().getResourceAsStream("/nur/images/setting.png"));
     // private Button newProject = new Button(); //odkaz na stránku nového projektu - nakonec asi nebude?
     private Button templates = new Button(); //odkaz na stránku Templates
     private Button preprocess = new Button(); //odkaz na první stránku preprocess

@@ -1,4 +1,4 @@
-package nur.nur_2.Displays;
+package nur.Displays;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -20,9 +20,9 @@ public class Templates extends BorderPane {
     private VBox body = new VBox();
 
     private Button settingButton = new Button(); //odkaz na stránku Settings
-    private Image setting = new Image(getClass().getResourceAsStream("/nur/nur_2/images/setting.png"));
+    private Image setting = new Image(getClass().getResourceAsStream("/nur/images/setting.png"));
     private Button backButton = new Button(); //odkaz na homePage
-    private Image back = new Image(getClass().getResourceAsStream("/nur/nur_2/images/back.png"));
+    private Image back = new Image(getClass().getResourceAsStream("/nur/images/back.png"));
 
     private Label info = new Label(" \n  Name: Dr. Kocourek \n  ID: 55684 \n \n Nemocnice Motol");
 

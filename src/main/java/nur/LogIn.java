@@ -1,4 +1,4 @@
-package nur.nur_2;
+package nur;
 
 import javafx.animation.PauseTransition;
 import javafx.event.ActionEvent;
@@ -21,7 +21,7 @@ public class LogIn extends VBox {
     private TextField passwordField = new TextField();
     private Button loginButton = new Button("Login");
     private Label infoLabel = new Label("Login successful!");
-    Image logo = new Image(getClass().getResourceAsStream("/nur/nur_2/images/logo.png"));
+    Image logo = new Image(getClass().getResourceAsStream("/nur/images/logo.png"));
 
     public void logIn() {
 
