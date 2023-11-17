@@ -3,11 +3,10 @@ package nur.Displays;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import nur.Displays.buttons.SettingButton;
 
 public class HomePage extends BorderPane {
 
@@ -17,8 +16,7 @@ public class HomePage extends BorderPane {
 
     private VBox body = new VBox(); //abych  mohla dat oba hbox vedle vbox
 
-    private Button settingButton = new Button(); //odkaz na stránku Settings
-    private Image setting = new Image(getClass().getResourceAsStream("/nur/images/setting.png"));
+    private SettingButton settingButton = new SettingButton();
     // private Button newProject = new Button(); //odkaz na stránku nového projektu - nakonec asi nebude?
     private Button templates = new Button(); //odkaz na stránku Templates
     private Button preprocess = new Button(); //odkaz na první stránku preprocess
@@ -32,15 +30,6 @@ public class HomePage extends BorderPane {
         info.setMinHeight(100);
         info.setMinWidth(100);
         info.setStyle("-fx-border-color: grey; -fx-background-color: gray; -fx-text-fill: white; ");
-
-        ImageView image = new ImageView(setting);
-        image.setFitHeight(80);
-        image.setFitWidth(80);
-        image.setStyle("-fx-alignment: center");
-        settingButton.setAlignment(Pos.BOTTOM_CENTER);
-        settingButton.setGraphic(image);
-        settingButton.setMaxWidth(150);
-        settingButton.setMaxHeight(150);
 
         vBox.setAlignment(Pos.TOP_CENTER);
         vBox.setMinWidth(100);
@@ -128,7 +117,7 @@ public class HomePage extends BorderPane {
 
         setLeft(vBox);
         setCenter(body);
-
+        //setVisible(false);
 
     }
 }

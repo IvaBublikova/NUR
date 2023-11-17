@@ -12,6 +12,8 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+import nur.Displays.buttons.BackButton;
+import nur.Displays.buttons.SettingButton;
 
 public class Templates extends BorderPane {
     private VBox vBox = new VBox();
@@ -19,10 +21,8 @@ public class Templates extends BorderPane {
     private HBox main = new HBox();
     private VBox body = new VBox();
 
-    private Button settingButton = new Button(); //odkaz na stránku Settings
-    private Image setting = new Image(getClass().getResourceAsStream("/nur/images/setting.png"));
-    private Button backButton = new Button(); //odkaz na homePage
-    private Image back = new Image(getClass().getResourceAsStream("/nur/images/back.png"));
+    private SettingButton settingButton = new SettingButton();
+    private BackButton backButton = new BackButton();
 
     private Label info = new Label(" \n  Name: Dr. Kocourek \n  ID: 55684 \n \n Nemocnice Motol");
 
@@ -39,15 +39,6 @@ public class Templates extends BorderPane {
         info.setMinWidth(100);
         info.setStyle("-fx-border-color: grey; -fx-background-color: gray; -fx-text-fill: white; ");
 
-        ImageView imageSett = new ImageView(setting);
-        imageSett.setFitHeight(80);
-        imageSett.setFitWidth(80);
-        imageSett.setStyle("-fx-alignment: center");
-        settingButton.setAlignment(Pos.BOTTOM_CENTER);
-        settingButton.setGraphic(imageSett);
-        settingButton.setMaxWidth(150);
-        settingButton.setMaxHeight(150);
-
         vBox.setAlignment(Pos.TOP_CENTER);
         vBox.setMinWidth(100);
         vBox.setSpacing(600);
@@ -57,15 +48,6 @@ public class Templates extends BorderPane {
         vBox.setFillWidth(true);
 
         //horní lista
-        ImageView imageBack = new ImageView(back);
-        imageBack.setFitHeight(80);
-        imageBack.setFitWidth(80);
-        imageSett.setStyle("-fx-alignment: center");
-        backButton.setAlignment(Pos.BOTTOM_CENTER);
-        backButton.setGraphic(imageBack);
-        backButton.setMinHeight(100);
-        backButton.setMinWidth(100);
-
         hBox.setAlignment(Pos.TOP_LEFT);
         hBox.setMaxHeight(100);
         hBox.setSpacing(650);
