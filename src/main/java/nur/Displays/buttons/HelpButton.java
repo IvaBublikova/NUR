@@ -8,7 +8,7 @@ import javafx.scene.image.ImageView;
 public class HelpButton extends Button {
 
     public HelpButton(String tooltipText) {
-        String imagePath = "/nur/nur_2/images/help.png";
+        String imagePath = "/nur/images/help.png";
 
         // Vytvoření obrázku a tlačítka
         Image helpImage = new Image(getClass().getResourceAsStream(imagePath));

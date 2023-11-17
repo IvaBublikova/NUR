@@ -7,7 +7,7 @@ import javafx.scene.image.ImageView;
 
 public class HomeButton extends Button {
     public HomeButton() {
-        String imagePath = "/nur/nur_2/images/home.png";
+        String imagePath = "/nur/images/home.png";
 
         // Vytvoření obrázku a tlačítka
         Image homeImage = new Image(getClass().getResourceAsStream(imagePath));

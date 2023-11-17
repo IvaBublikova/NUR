@@ -7,7 +7,7 @@ import javafx.scene.image.ImageView;
 
 public class SettingButton extends Button {
     public SettingButton() {
-        String imagePath = "/nur/nur_2/images/setting.png";
+        String imagePath = "/nur/images/setting.png";
 
         // Vytvoření obrázku a tlačítka
         Image homeImage = new Image(getClass().getResourceAsStream(imagePath));

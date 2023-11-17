@@ -7,7 +7,7 @@ import javafx.scene.image.ImageView;
 
 public class BackButton extends Button {
     public BackButton() {
-        String imagePath = "/nur/nur_2/images/back.png";
+        String imagePath = "/nur/images/back.png";
 
         // Vytvoření obrázku a tlačítka
         Image homeImage = new Image(getClass().getResourceAsStream(imagePath));

@@ -49,7 +49,6 @@ public class B_Functions extends BorderPane {
     private Label applyTopUpL = new Label(" ApplyTopUp ");
 
     private Label helpL = new Label("Help: ");
-    private Image help = new Image(getClass().getResourceAsStream("/nur/nur_2/images/help.png"));
     private HelpButton buttonFSLmaths = new HelpButton("Tool tip for FSL");
     private HelpButton buttonBet = new HelpButton("Tool tip for Bet");
     private HelpButton buttonFEddy = new HelpButton("Tool tip for Eddy");
@@ -178,7 +177,7 @@ public class B_Functions extends BorderPane {
         grid.addRow( 3, chcekFast, fastL, buttonFast, fast, doneFast);
         grid.addRow( 4, chcekEddy, eddyL, buttonFEddy, eddy, doneEddy);
         grid.addRow( 5, chcekApplyTopUp, applyTopUpL, buttonApplyTopUp, applytopup, doneApplyTopUp);
-        grid.getStylesheets().add(Objects.requireNonNull(getClass().getResource("/nur/nur_2/styles/grid-pane.css")).toExternalForm());
+
 
 
 
